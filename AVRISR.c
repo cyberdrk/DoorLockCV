@@ -49,7 +49,7 @@ void Led_init(void){
 }
 
 // not being used but here for completeness
-      // Wait until a byte has been received and return received data 
+// Wait until a byte has been received and return received data 
 uint8_t USART_ReceiveByte(){
   while((UCSRA &(1<<RXC)) == 0);
   
